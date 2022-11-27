@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
+import ReactDOM from "react-dom/client";
 import Weather from "./Weather";
 
 export default class App extends Component {
