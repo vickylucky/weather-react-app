@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+// eslint-disable-line no-use-before
 
 # testing
 /coverage
