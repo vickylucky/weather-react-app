@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
+import React from "react";
 import Weather from "./Weather";
+
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        <Route
+        <createRoot
           exact={true}
           path="/"
           render={() => (
@@ -15,7 +16,7 @@ export default class App extends Component {
             </div>
           )}
         />
-        <Route
+        <createRoot
           exact={true}
           path="/paris"
           render={() => (
@@ -24,7 +25,7 @@ export default class App extends Component {
             </div>
           )}
         />
-        <Route
+        <createRoot
           exact={true}
           path="/sydney"
           render={() => (
@@ -33,7 +34,7 @@ export default class App extends Component {
             </div>
           )}
         />
-        <Route
+        <createRoot
           exact={true}
           path="/san-francisco"
           render={() => (
@@ -42,6 +43,7 @@ export default class App extends Component {
             </div>
           )}
         />
+
       </div>
     );
   }
